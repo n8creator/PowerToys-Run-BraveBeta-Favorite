@@ -1,0 +1,14 @@
+{
+  "ID": "D73A7EF0633F4C82A14454FFD848F447",
+  "Disabled": false,
+  "ActionKeyword": "@",
+  "IsGlobal": false,
+  "Name": "Brave Favorite",
+  "Author": "n8creator",
+  "Version": "1.0.1",
+  "Language": "csharp",
+  "Website": "https://aka.ms/powertoys",
+  "ExecuteFileName": "Community.PowerToys.Run.Plugin.BraveFavorite.dll",
+  "IcoPathDark": "Images\\BraveFavorite.dark.png",
+  "IcoPathLight": "Images\\BraveFavorite.light.png"
+}

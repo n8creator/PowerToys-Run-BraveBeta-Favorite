@@ -1,18 +1,18 @@
-﻿// Copyright (c) Davide Giacometti. All rights reserved.
+﻿// Copyright (c) Davide Giacometti, Dmitry Volkov. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Controls;
-using Community.PowerToys.Run.Plugin.EdgeFavorite.Helpers;
-using Community.PowerToys.Run.Plugin.EdgeFavorite.Models;
+using Community.PowerToys.Run.Plugin.BraveFavorite.Helpers;
+using Community.PowerToys.Run.Plugin.BraveFavorite.Models;
 using ManagedCommon;
 using Microsoft.PowerToys.Settings.UI.Library;
 using Wox.Infrastructure;
 using Wox.Plugin;
 
-namespace Community.PowerToys.Run.Plugin.EdgeFavorite
+namespace Community.PowerToys.Run.Plugin.BraveFavorite
 {
     public class Main : IPlugin, ISettingProvider, IContextMenu
     {
@@ -25,9 +25,9 @@ namespace Community.PowerToys.Run.Plugin.EdgeFavorite
         private PluginInitContext? _context;
         private bool _searchTree;
 
-        public string Name => "Edge Favorite";
+        public string Name => "Brave Favorite";
 
-        public string Description => "Open Microsoft Edge favorites.";
+        public string Description => "Open Brave favorites.";
 
         public IEnumerable<PluginAdditionalOption> AdditionalOptions => new List<PluginAdditionalOption>
         {

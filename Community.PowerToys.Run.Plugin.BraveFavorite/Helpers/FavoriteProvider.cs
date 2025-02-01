@@ -1,17 +1,17 @@
-﻿// Copyright (c) Davide Giacometti. All rights reserved.
+﻿// Copyright (c) Davide Giacometti, Dmitry Volkov. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 using System;
 using System.IO;
 using System.Text.Json;
-using Community.PowerToys.Run.Plugin.EdgeFavorite.Models;
+using Community.PowerToys.Run.Plugin.BraveFavorite.Models;
 using Wox.Plugin.Logger;
 
-namespace Community.PowerToys.Run.Plugin.EdgeFavorite.Helpers
+namespace Community.PowerToys.Run.Plugin.BraveFavorite.Helpers
 {
     public class FavoriteProvider : IFavoriteProvider
     {
-        private readonly string _path = Environment.ExpandEnvironmentVariables(@"%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Bookmarks");
+        private readonly string _path = Environment.ExpandEnvironmentVariables(@"%LOCALAPPDATA%\BraveSoftware\Brave-Browser-Beta\User Data\Default\Bookmarks");
         private readonly FileSystemWatcher _watcher;
         private FavoriteItem _root;
 

@@ -1,4 +1,4 @@
-﻿// Copyright (c) Davide Giacometti. All rights reserved.
+﻿// Copyright (c) Davide Giacometti, Dmitry Volkov. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 using System;
@@ -12,7 +12,7 @@ using Wox.Infrastructure;
 using Wox.Plugin;
 using Wox.Plugin.Logger;
 
-namespace Community.PowerToys.Run.Plugin.EdgeFavorite.Models
+namespace Community.PowerToys.Run.Plugin.BraveFavorite.Models
 {
     public class FavoriteItem
     {
@@ -71,7 +71,7 @@ namespace Community.PowerToys.Run.Plugin.EdgeFavorite.Models
                     QueryTextDisplay = Path,
                     Action = _ =>
                     {
-                        Helper.OpenInShell($"microsoft-edge:{Url}");
+                        Helper.OpenInShell($"{Url}");
                         return true;
                     },
                     ToolTipData = new ToolTipData(Name, Url),
@@ -119,7 +119,7 @@ namespace Community.PowerToys.Run.Plugin.EdgeFavorite.Models
                         PluginName = _pluginName,
                         Action = _ =>
                         {
-                            Helper.OpenInShell(@"shell:AppsFolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge", $"-private {Url}");
+                            Helper.OpenInShell(@"shell:AppsFolder\Brave Beta", $"-private {Url}");
                             return true;
                         },
                     },
