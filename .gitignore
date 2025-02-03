@@ -351,3 +351,6 @@ MigrationBackup/
 
 !*/Libs/x64
 !*/Libs/ARM64
+
+# Ignore zip files
+*.zip
